@@ -1,0 +1,55 @@
+.mainDiv{
+  display: flex;
+  justify-content: space-between;
+  background: pink;
+}
+.leftDiv{
+  text-align: center;
+  position: fixed;
+  width: 25%;
+  background: green;
+  height: auto;
+}
+.rightDiv{
+  margin-left: 26%;
+  width: 74%;
+  background: #adaeda;
+  padding: 10px;
+}
+.image1{
+  width: 70%;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+@media all and (max-width:750px){
+  body{
+    background:red;
+  }
+  .mainDiv{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+.leftDiv{
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.rightDiv{
+  width: 100%;
+  margin-left: 0%;
+}
+}
+@media all and (min-width:500px) and (max-width:750px){
+  .mainDiv{
+    background: #addeea;
+    width: 100%;
+  }
+.leftDiv{
+  width: 100%;
+  display: flex;
+}
+.rightDiv{
+  width: 100%;
+  margin-left: 0%;
+}
+}
